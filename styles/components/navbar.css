@@ -1,0 +1,36 @@
+.navbar{
+    z-index: 9999;
+    width: 100vw;
+    max-width: 100%;
+}
+
+.navbar_content__logo{
+    position: relative;
+    max-width: 70%;
+    max-height: auto;
+}
+.navbar_column__row{
+    align-items: center;
+}
+
+.navbar_content__button{
+    color: white !important;
+    font-weight: 600;
+    text-decoration: none;
+    margin-right: 2%;
+}
+
+.navbar_content__button:hover{
+    color: #E50914 !important;
+}
+
+.navbar_profile__pic{
+    position: relative;
+    max-width: 100%;
+}
+
+.navbar_action__icon{
+    cursor: pointer;
+    color: white;
+    margin-left: 5%;
+}
