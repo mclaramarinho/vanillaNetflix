@@ -1,0 +1,42 @@
+/* imports */
+@import url(flex.css);
+@import url(spacing.css);
+@import url(components/navbar.css);
+@import url(typography.css);
+
+:root{
+    --netflix-red: #E50914;
+    --netflix-symbol-dark-red: #B20710;
+}
+
+
+body{
+    margin: 0 !important;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+#start{
+    display: block;
+    height: 100vh;
+    background-image: url('/assets/thumbnails/the-blacklist.png');
+    background-size: cover;
+}
+
+.video_player{
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+
+.d-none{
+    display: none !important;
+}
+
+.p-fixed{
+    position: fixed;
+}
+
+.top-0{
+    top: 0;
+}
