@@ -1,0 +1,16 @@
+
+#lists_section{
+    position: absolute;
+    z-index: 99999;
+    background-color: var(--black);
+    padding: 0 2.5%;
+    padding-bottom: 5%;
+    display: grid;
+    row-gap: 5vh;
+}
+
+.lists_container{
+    position: relative;
+    display: inline-block;
+    color: var(--white);
+}

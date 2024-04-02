@@ -1,0 +1,25 @@
+
+.normal_carousel_track{
+    position: relative;
+    column-gap: 2vw !important;
+}
+
+ .hovered_img{
+    position: relative;
+    width: 22vw;
+    box-shadow: 5px 5px 50px 1px #000000c6;
+}
+
+.normal_carousel__img:not(.hovered_img){
+    width: 20vw;
+    height: fit-content;
+} 
+
+.carousel_item__info{
+    display: grid;
+    grid-template-columns: auto auto;
+    color: white;
+    text-decoration: none;
+    justify-content: start;
+    column-gap: 5%;
+}

@@ -1,0 +1,36 @@
+
+.carousel{
+    height: fit-content;
+    
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+}
+
+.carousel_controller{
+    display: grid;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.carousel_controller__prev:not(.trend_carousel){
+    margin-right: 2vw;
+}
+.carousel_controller__next{
+    margin-left: 2vw;
+}
+
+.carousel_track{
+    position: relative;
+
+    display: flex;
+    column-gap: 10vw;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    scroll-behavior: smooth;
+}
+.carousel_track::-webkit-scrollbar{
+    display: none;
+}

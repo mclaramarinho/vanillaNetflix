@@ -1,0 +1,117 @@
+.movie_details__container{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    justify-items: center;
+    top: 5%;
+    padding: 5%;
+}
+
+@media (max-width: 1000px){
+    .movie_details__container{
+        width: 90vw;
+        max-width: 80vw;
+    }
+}
+@media (min-width: 1000px){
+    .movie_details__container{
+        width: 50vw;
+    }
+}
+
+#movie_info__container, #comments_container{
+    margin-top: 5%;
+    width: 90%;
+    color: white;
+}
+#comments_container{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+#comments_container > div > h1{
+    margin: 0;
+}
+#comment_input__area{
+    grid-column: 1 / 3;
+    grid-row: 2;
+}
+#comment_input__area > textarea{
+    width: 100%;
+    font-family: "Bebas Neue", sans-serif;
+    background-color: var(--gray);
+    padding: 2.5%;
+    font-size: 1rem;
+    color: var(--white);
+}
+
+#submit_button{
+    width: fit-content;
+    padding: 1.5% 5%;
+    font-size: 1rem;
+    background-color: var(--gray);
+    color: var(--white);
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 100vw;
+    text-decoration: none;
+}
+
+
+.movie_details__container> video{
+    width: 90%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.movie_details__container> img{
+    width: 90%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+#small_info__container{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 2%;
+    align-items: center;
+    justify-content: start;
+}
+
+#movie_details__actions{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 5%;
+    justify-content: start;
+    align-items: center;
+}
+#movie_details__actions > i{
+    padding: 1vw;
+    font-size: 20px;
+    background-color: var(--gray);
+    border-radius: 100%;
+    cursor: pointer;
+}
+#movie_details__actions > a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;    
+}
+
+#movie_info__container > h1{
+    margin: 0;
+}
+.small_info{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    column-gap: 5%;
+    width: fit-content;
+}
+
+.chip{
+    background-color: var(--gray);
+    width: fit-content;
+    padding: 1vh;
+    border-radius: 100vw;
+}

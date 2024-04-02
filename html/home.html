@@ -4,23 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="../styles/index.css">
 
-    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Fontawesome Icons -->
+    <script src="https://kit.fontawesome.com/c87f40724e.js" crossorigin="anonymous"></script>
+
+    <!-- Components -->
+    <script src="../js/index.js" type="module"></script>
+    <script src="../js/components/navbar.js" type="module"></script>
+    <script src="../js/components/homeVideoSection.js" type="module"></script>
+    <script src="../js/components/trendingCarousel.js" type="module"></script>
+    <script src="../js/components/normalCarousel.js" type="module"></script>
+
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
     <title>Netflix - Home</title>
 </head>
 <body>
-    <div id="navbar" />
-    
-    <section id="start">
-        <video autoplay preload="auto" id="home_videoplayer" class="video_player" poster="/assets/thumbnails/the-blacklist.png">
-            <source src="/assets/trailers/the-blacklist-trailer.mp4" type="video/mp4" />
-        </video>
+    <main id="start">
+        <div id="navbar"></div>
+        <div id="video_section"></div>
         
-    </section>
-    <section id=""></section>
-
-    <script src="/js/index.js" type="module"></script>
-    <script src="https://kit.fontawesome.com/c87f40724e.js" crossorigin="anonymous"></script>
+        <section id="lists_section">
+            <div id="trending_now__container" class="lists_container"></div>
+            <div id="tv_shows__container" class="lists_container"></div>
+            <div id="movies_container" class="lists_container"></div>
+        </section>
+    </main>
 </body>
 </html>

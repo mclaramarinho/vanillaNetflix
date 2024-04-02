@@ -1,70 +1,72 @@
-export default function NavbarComponent(){
+
+NavbarComponent()
+
+function NavbarComponent(){
+    const navSlot = document.querySelector("#navbar");
     const nav = document.createElement('nav')
-    const colsPerButton = 10/buttons.length;
+    nav.classList.add( "navbar")
     const navHTML = `
-    <nav class="p-fixed top-0 navbar">
-        <div class="row px-2 py-1 navbar_row">
-            <div class="col-8 navbar_column">
-                <div class="row navbar_column__row">
-                    <div class="col-2">
-                        <img src="../../assets/logos/N_Logo.png" class="navbar_content__logo" />
-                    </div>
-                    ${buttons.map(item => 
-                        `<a class="col-${colsPerButton} navbar_content__button" href="/html/${item.href}.html">${item.title}</a>`
-                    )}
-                </div>
+        <a href="./home.html">
+            <img src="../assets/logos/N_Logo.png" class="navbar_content__logo" />
+        </a>
+
+        <div class="navbar_menu__container_mobile">
+            <div class="navbar_menu__navigate" id="navbar_menu__navigate">
+                <button class="">Navigate</button>
+                <i class="fa-solid fa-sort-down font-white row"></i>
+            </div>
+    
+            <ul id="navigate_dropdown__container" class="hidden">
+                <li>
+                    <a class="navbar_menu__button" href="./home.html">Home</a>
+                </li>
+                <li>
+                    <a class="navbar_menu__button" href="./all.html?tv-shows">TV Shows</a>
+                </li>
+                <li>
+                    <a class="navbar_menu__button" href="./all.html?movies">Movies</a>
+                </li>
+                <li>
+                    <a class="navbar_menu__button" href="./my-list.html">My List</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="navbar_menu__container">
+            <a class="navbar_menu__button" href="./home.html">Home</a>
+            <a class="navbar_menu__button" href="./all.html?tv-shows">TV Shows</a>
+            <a class="navbar_menu__button" href="./all.html?movies">Movies</a>
+            <a class="navbar_menu__button" href="./my-list.html">My List</a>
+        </div>
+
+        <div class="navbar_action__container">
+            <div>
+                <input type="text" id="search_bar" class="hidden" placeholder="Search for titles...">
+                <i class="fa-solid fa-magnifying-glass navbar_action__icon font-12" id="navbar_search__icon"></i>
             </div>
 
-            <div class="col-4 navbar_column">
-                <div class="row navbar_column__row justify-end">
+            <i class="fa-regular fa-bell navbar_action__icon font-12"></i>
 
-                    <i class="fa-solid fa-magnifying-glass navbar_action__icon font-12"></i>
-                    
-                    <i class="fa-regular fa-bell navbar_action__icon font-12"></i>
-                    
-                    <div class="col-1 navbar_action__icon">
-                        <div class="row justify-space-between">
-                            <div class="col-8">
-                                <img src="../../assets/netflix-profile-pic.jpg" class="navbar_profile__pic" />
-                            </div>
-                            <div class="col-4">
-                                <i class="fa-solid fa-sort-down font-white row"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="navbar_profile__button navbar_action__icon">
+                <img src="../../assets/netflix-profile-pic.jpg" class="navbar_profile__pic" />
+                <i class="fa-solid fa-sort-down font-white row"></i>
             </div>
         </div>
-    </nav>
     `
-    nav.innerHTML = navHTML
-    return nav
+    nav.innerHTML = navHTML;
+    navSlot.appendChild(nav);
+
+    const searchBtn = document.getElementById("navbar_search__icon");
+    const searchBar = document.getElementById("search_bar");
+
+    searchBtn.addEventListener("mouseup", e =>{
+        searchBar.classList.toggle("hidden")
+    })
+
+    const navigateBtn = document.getElementById("navbar_menu__navigate");
+    const navigateDD = document.getElementById("navigate_dropdown__container");
+
+    navigateBtn.addEventListener("mouseup", e =>{
+        navigateDD.classList.toggle("hidden")
+    })
 }
-
-
-const buttons = [
-    {
-        title: 'Home',
-        href: 'home'
-    },
-    {
-        title: 'TV Shows',
-        href: 'tv-shows'
-    },
-    {
-        title: 'Movies',
-        href: 'movies'
-    },
-    {
-        title: 'New & Popular',
-        href: 'new-and-popular'
-    },
-    {
-        title: 'My List',
-        href: 'home'
-    },
-    {
-        title: 'Browse by Languages',
-        href: 'browse-by-languages'
-    }, 
-]

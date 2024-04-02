@@ -1,33 +1,44 @@
 /* imports */
-@import url(flex.css);
-@import url(spacing.css);
 @import url(components/navbar.css);
-@import url(typography.css);
+@import url(sections/start.css);
+@import url(sections/lists.css);
+@import url(sections/movieDetails.css);
+
+@import url(components/carousel.css);
+@import url(components/trendingCarousel.css);
+@import url(components/normalCarousel.css);
+
 
 :root{
     --netflix-red: #E50914;
     --netflix-symbol-dark-red: #B20710;
+    --white: #f8f8f8;
+    --gray: #6d6d6eb3;
+    --black: #141414;
 }
 
 
 body{
     margin: 0 !important;
     font-family: "Bebas Neue", sans-serif;
+    background-color: var(--black);
 }
 
-#start{
+@media (max-width: 1000px){
+    :root{
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 1001px){
+    :root{
+        font-size: 16px;
+    }
+}
+
+.d-block{
     display: block;
-    height: 100vh;
-    background-image: url('/assets/thumbnails/the-blacklist.png');
-    background-size: cover;
 }
-
-.video_player{
-    width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-}
-
 
 .d-none{
     display: none !important;
@@ -39,4 +50,13 @@ body{
 
 .top-0{
     top: 0;
+}
+.color-white{
+    color: var(--white);
+}
+.font-15{
+    font-size: 1.5rem;
+}
+.font-12{
+    font-size: 1.2rem;
 }

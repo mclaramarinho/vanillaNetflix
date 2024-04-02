@@ -1,0 +1,17 @@
+main{
+    width: 90vw;
+    position: absolute;
+    top: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.movie_list__container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 3vh;
+}
+
+h1{
+    color: white;
+}

@@ -1,0 +1,29 @@
+.carousel_item__container{
+    position: relative;
+    display: flex;
+    column-gap: 20%;
+}
+
+.rank_10__container{
+    column-gap: 50%;
+}
+
+
+.carousel_item__number{
+    z-index: -99;
+    width: 50%;
+    height: 100%;
+    overflow: visible;
+    transform: scale(1);
+}
+
+@media (max-width: 1000px){
+    .carousel_item__img{
+        max-width: 15vw;
+    } 
+}
+@media (min-width: 1000px){
+    .carousel_item__img{
+        max-width: 10vw;
+    } 
+}
