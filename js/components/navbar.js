@@ -18,7 +18,7 @@ function NavbarComponent(){
     
             <ul id="navigate_dropdown__container" class="hidden">
                 <li>
-                    <a class="navbar_menu__button" href="./home.html">Home</a>
+                    <a class="navbar_menu__button" href="./index.html">Home</a>
                 </li>
                 <li>
                     <a class="navbar_menu__button" href="./all.html?tv-shows">TV Shows</a>
@@ -33,7 +33,7 @@ function NavbarComponent(){
         </div>
 
         <div class="navbar_menu__container">
-            <a class="navbar_menu__button" href="./home.html">Home</a>
+            <a class="navbar_menu__button" href="./index.html">Home</a>
             <a class="navbar_menu__button" href="./all.html?tv-shows">TV Shows</a>
             <a class="navbar_menu__button" href="./all.html?movies">Movies</a>
             <a class="navbar_menu__button" href="./my-list.html">My List</a>

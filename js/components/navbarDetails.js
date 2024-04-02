@@ -6,10 +6,10 @@ function NavbarComponent(){
     nav.classList.add("navbar")
     const navHTML = `
         <div class="navbar_details__container">
-            <a href="./home.html">
+            <a href="./index.html">
                 <i class="fa-solid fa-chevron-left color-white font-15"></i>
             </a>  
-            <a href="./home.html">
+            <a href="./index.html">
                 <img src="../assets/logos/N_Logo.png" class="navbar_content__logo" />
             </a>  
         </div>       
