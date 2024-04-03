@@ -6,7 +6,7 @@ function NavbarComponent(){
     const nav = document.createElement('nav')
     nav.classList.add( "navbar")
     const navHTML = `
-        <a href="./home.html">
+        <a href="./index.html">
             <img src="../assets/logos/N_Logo.png" class="navbar_content__logo" />
         </a>
 
@@ -18,25 +18,25 @@ function NavbarComponent(){
     
             <ul id="navigate_dropdown__container" class="hidden">
                 <li>
-                    <a class="navbar_menu__button" href="./index.html">Home</a>
+                    <a class="navbar_menu__button" href="./html/index.html">Home</a>
                 </li>
                 <li>
-                    <a class="navbar_menu__button" href="./all.html?tv-shows">TV Shows</a>
+                    <a class="navbar_menu__button" href="./html/all.html?tv-shows">TV Shows</a>
                 </li>
                 <li>
-                    <a class="navbar_menu__button" href="./all.html?movies">Movies</a>
+                    <a class="navbar_menu__button" href="./html/all.html?movies">Movies</a>
                 </li>
                 <li>
-                    <a class="navbar_menu__button" href="./my-list.html">My List</a>
+                    <a class="navbar_menu__button" href="./html/my-list.html">My List</a>
                 </li>
             </ul>
         </div>
 
         <div class="navbar_menu__container">
-            <a class="navbar_menu__button" href="./index.html">Home</a>
-            <a class="navbar_menu__button" href="./all.html?tv-shows">TV Shows</a>
-            <a class="navbar_menu__button" href="./all.html?movies">Movies</a>
-            <a class="navbar_menu__button" href="./my-list.html">My List</a>
+            <a class="navbar_menu__button" href="./html/index.html">Home</a>
+            <a class="navbar_menu__button" href="./html/all.html?tv-shows">TV Shows</a>
+            <a class="navbar_menu__button" href="./html/all.html?movies">Movies</a>
+            <a class="navbar_menu__button" href="./html/my-list.html">My List</a>
         </div>
 
         <div class="navbar_action__container">
@@ -48,7 +48,7 @@ function NavbarComponent(){
             <i class="fa-regular fa-bell navbar_action__icon font-12"></i>
 
             <div class="navbar_profile__button navbar_action__icon">
-                <img src="../../assets/netflix-profile-pic.jpg" class="navbar_profile__pic" />
+                <img src="../assets/netflix-profile-pic.jpg" class="navbar_profile__pic" />
                 <i class="fa-solid fa-sort-down font-white row"></i>
             </div>
         </div>

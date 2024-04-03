@@ -13,7 +13,8 @@ function TitleCardTop10(){
         if (i === 9){
             new_card.classList.add('rank_10__container')
         }
-        new_card.setAttribute("href", t.id)
+        
+        new_card.setAttribute("href", ('./html/details.html?tvid='+t.id))
 
         new_card.innerHTML = `
                     <svg id="rank-${i+1}" viewBox="${viewbox1} 0 70 154" class="carousel_item__number">

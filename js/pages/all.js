@@ -29,7 +29,7 @@ function TitleCardList(list, movieOrTv){
 
         console.log(filename);
 
-        new_card.setAttribute("href", `./details.html?${filename}&id=${t.id}`)
+        new_card.setAttribute("href", `./html/details.html?${filename}&id=${t.id}`)
 
         console.log(new_card.getAttribute("href"));
 
